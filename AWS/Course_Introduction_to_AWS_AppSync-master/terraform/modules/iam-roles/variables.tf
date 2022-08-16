@@ -1,15 +1,15 @@
-variable "logging-name" {
+variable "logging-iam-role-name" {
   default     = "GuruQuizbizLogging"
   type        = string
   description = "The name of the role."
 }
-variable "dbaccess-name" {
+variable "dbaccess-iam-role-name" {
   default     = "GuruQuizbizDataAccess"
   type        = string
   description = "The name of the role."
 }
 variable "dbaccess-policy-name" {
-  default     = "QuizBizQuestionTable"
+  default     = "DdbAccess"
   type        = string
   description = "Access to Quiz Biz Questions in DynamoDB"
 }
